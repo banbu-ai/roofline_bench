@@ -1,0 +1,37 @@
+# macOS
+hf download Qwen/Qwen2.5-1.5B-Instruct --local-dir ~/huggingface/models/Qwen/Qwen2.5-1.5B-Instruct
+hf download Qwen/Qwen2.5-1.5B-Instruct-GGUF --local-dir ~/huggingface/models/Qwen/Qwen2.5-1.5B-Instruct-GGUF
+modelscope download --model LLM-Research/Llama-3.2-1B-Instruct --local_dir ~/modelscope/models/LLM-Research/Llama-3.2-1B-Instruct
+hf download Qwen/Qwen3-0.6B --local-dir ~/huggingface/models/Qwen/Qwen3-0.6B
+hf download Qwen/Qwen3-0.6B-GGUF --local-dir ~/huggingface/models/Qwen/Qwen3-0.6B-GGUF
+hf download PLM-Team/PLM-1.8B-Instruct --local-dir ~/huggingface/models/PLM-Team/PLM-1.8B-Instruct
+hf download Qwen/Qwen2.5-7B-Instruct-GGUF --local-dir ~/huggingface/models/Qwen/Qwen2.5-7B-Instruct-GGUF
+hf download Qwen/Qwen2.5-14B-Instruct-GGUF --local-dir ~/huggingface/models/Qwen/Qwen2.5-14B-Instruct-GGUF
+hf download Qwen/Qwen2.5-32B-Instruct-GGUF --local-dir ~/huggingface/models/Qwen/Qwen2.5-32B-Instruct-GGUF
+hf download tensoropera/Fox-1-1.6B --local-dir ~/huggingface/models/tensoropera/Fox-1-1.6B
+hf download HuggingFaceTB/SmolLM2-1.7B-Instruct --local-dir ~/huggingface/models/HuggingFaceTB/SmolLM2-1.7B-Instruct
+hf download IndexTeam/Index-1.9B --local-dir ~/huggingface/models/IndexTeam/Index-1.9B
+hf download HuggingFaceTB/Index-1.9B-Chat-GGUF --local-dir ~/huggingface/models/HuggingFaceTB/Index-1.9B-Chat-GGUF
+
+# Raspberry Pi
+hf download HuggingFaceTB/SmolLM2-135M-Instruct --local-dir ~/huggingface/models/HuggingFaceTB/SmolLM2-135M-Instruct
+hf download HuggingFaceTB/SmolLM2-360M-Instruct --local-dir ~/huggingface/models/HuggingFaceTB/SmolLM2-360M-Instruct
+hf download EleutherAI/pythia-160m --local-dir ~/huggingface/models/EleutherAI/pythia-160m
+hf download EleutherAI/pythia-410m --local-dir ~/huggingface/models/EleutherAI/pythia-410m
+hf download Qwen/Qwen2.5-0.5B-Instruct --local-dir ~/huggingface/models/Qwen/Qwen2.5-0.5B-Instruct
+hf download Qwen/Qwen3-0.6B --local-dir ~/huggingface/models/Qwen/Qwen3-0.6B
+
+# Windows
+hf download Qwen/Qwen2.5-1.5B-Instruct --local-dir E:/huggingface/models/Qwen/Qwen2.5-1.5B-Instruct
+hf download Qwen/Qwen2.5-1.5B-Instruct-GGUF --local-dir E:/huggingface/models/Qwen2.5-1.5B-Instruct-GGUF
+modelscope download --model LLM-Research/Llama-3.2-1B-Instruct --local_dir E:/modelscope/models/LLM-Research/Llama-3.2-1B-Instruct
+hf download Qwen/Qwen3-0.6B --local-dir E:/huggingface/models/Qwen/Qwen3-0.6B
+hf download Qwen/Qwen3-0.6B-GGUF --local-dir E:/huggingface/models/Qwen/Qwen3-0.6B-GGUF
+hf download PLM-Team/PLM-1.8B-Instruct --local-dir E:/huggingface/models/PLM-Team/PLM-1.8B-Instruct
+hf download Qwen/Qwen2.5-7B-Instruct-GGUF --local-dir E:/huggingface/models/Qwen/Qwen2.5-7B-Instruct-GGUF
+hf download Qwen/Qwen2.5-14B-Instruct-GGUF --local-dir E:/huggingface/models/Qwen/Qwen2.5-14B-Instruct-GGUF
+hf download Qwen/Qwen2.5-32B-Instruct-GGUF --local-dir E:/huggingface/models/Qwen/Qwen2.5-32B-Instruct-GGUF
+hf download tensoropera/Fox-1-1.6B --local-dir E:/huggingface/models/tensoropera/Fox-1-1.6B
+hf download HuggingFaceTB/SmolLM2-1.7B-Instruct --local-dir E:/huggingface/models/HuggingFaceTB/SmolLM2-1.7B-Instruct
+hf download IndexTeam/Index-1.9B --local-dir E:/huggingface/models/IndexTeam/Index-1.9B
+hf download HuggingFaceTB/Index-1.9B-Chat-GGUF --local-dir E:/huggingface/models/HuggingFaceTB/Index-1.9B-Chat-GGUF

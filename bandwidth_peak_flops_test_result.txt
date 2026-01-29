@@ -1,0 +1,49 @@
+Apple M1 Pro https://en.wikipedia.org/wiki/Apple_M1
+NVIDIA GeForce RTX 3090 https://www.techpowerup.com/gpu-specs/geforce-rtx-3090.c3622
+NVIDIA GeForce RTX 3070 Ti Laptop GPU https://www.techpowerup.com/gpu-specs/geforce-rtx-3070-ti-mobile.c3852
+Jetson Orin Nano 8G https://www.techpowerup.com/gpu-specs/jetson-orin-nano-8-gb.c4082
+Jetson Orin Nano Super 8G https://www.techpowerup.com/gpu-specs/jetson-orin-nano-super.c4377
+Raspberry Pi 5 https://www.raspberrypi.com/news/introducing-raspberry-pi-5/
+
+Platform: Darwin
+Chip: Apple M1 Pro
+Theoretical memory bandwidth: 204.80 GB/s
+Theoretical peak FLOPs (FP32): 5.20 TFLOPS
+Measured memory bandwidth: 120.03 GB/s
+Measured peak FLOPs (FP16): 4.61 TFLOPS
+Measured peak FLOPs (FP32): 4.31 TFLOPS
+
+Platform: Linux
+Chip: NVIDIA GeForce RTX 3090
+Theoretical memory bandwidth: 936.20 GB/s
+Theoretical peak FLOPs (FP16): 35.58 TFLOPS
+Theoretical peak FLOPs (FP32): 35.58 TFLOPS
+Measured memory bandwidth: 560.02 GB/s
+Measured peak FLOPs (FP16): 66.20 TFLOPS
+Measured peak FLOPs (FP32): 24.28 TFLOPS
+
+Platform: Windows
+Chip: NVIDIA GeForce RTX 3070 Ti Laptop GPU
+Theoretical memory bandwidth: 448.00 GB/s
+Theoretical peak FLOPs (FP16): 16.60 TFLOPS
+Theoretical peak FLOPs (FP32): 16.60 TFLOPS
+Measured memory bandwidth: 217.00 GB/s
+Measured peak FLOPs (FP16): 31.76 TFLOPS
+Measured peak FLOPs (FP32): 9.51 TFLOPS
+
+Platform: Linux
+Chip: Jetson Orin Nano Super 8G
+Theoretical memory bandwidth: 102.00 GB/s
+Theoretical peak FLOPs (FP16): 4.178 TFLOPS
+Theoretical peak FLOPs (FP32): 2.089 TFLOPS
+Measured memory bandwidth: 59.40 GB/s
+Measured peak FLOPs (FP16): 9.56 TFLOPS
+Measured peak FLOPs (FP32): 1.34 TFLOPS
+
+Platform: Linux
+Chip: Raspberry Pi 5
+Theoretical memory bandwidth: 17.10 GB/s
+Theoretical peak FLOPs (FP32): 153.60 GFLOPS
+Measured memory bandwidth: 3.98 GB/s
+Measured peak FLOPs (FP16): 1.48 GFLOPS
+Measured peak FLOPs (FP32): 78.56 GFLOPS

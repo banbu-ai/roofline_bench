@@ -1,0 +1,4 @@
+# macOS
+export PYTHONPATH=/Users/saber/Code/llm_inference_roofline_detect:$PYTHONPATH
+# Windows
+$env:PYTHONPATH = "E:/Code/llm_inference_roofline_detect"

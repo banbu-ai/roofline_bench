@@ -1,0 +1,17 @@
+{
+  "log_dir": "E:/Code/llm_inference_roofline_detect/log",
+  "analysis_dir": "E:/Code/llm_inference_roofline_detect/analysis",
+  "threads": 1,
+  "model_name": "Qwen3-0.6B",
+  "model_type": "qwen3 F16",
+  "model_path": "E:/Code/llm_inference_roofline_detect/models/modified/Qwen3-0.6B-16-layers-f16.gguf",
+  "model_info":
+  {
+    "attention_type": "GQA",
+    "hidden_size": 1024,
+    "num_attention_heads": 16,
+    "num_hidden_layers": 16,
+    "num_key_value_heads": 8,
+    "is_modified_arch": true
+  }
+}

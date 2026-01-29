@@ -1,0 +1,30 @@
+{
+  "bandwidth": {
+    "Apple M1": 68.3e9,
+    "Apple M1 Pro": 204.8e9,
+    "Apple M1 Max": 409.6e9,
+    "Apple M1 Ultra": 819.2e9,
+    "Apple M2": 102.4e9,
+    "Apple M2 Pro": 204.8e9,
+    "Apple M2 Max": 409.6e9,
+    "Apple M2 Ultra": 819.2e9,
+    "NVIDIA GeForce RTX 3070 Ti Laptop GPU": 448.0e9,
+    "NVIDIA GeForce RTX 3090": 936.2e9,
+    "Jetson Orin Nano Super 8G": 102.0e9,
+    "Raspberry Pi 5": 17.1e9
+  },
+  "peak_flops_fp32": {
+    "Apple M1": 2.6e12,
+    "Apple M1 Pro": 5.2e12,
+    "Apple M1 Max": 10.4e12,
+    "Apple M1 Ultra": 21.0e12,
+    "Apple M2": 3.6e12,
+    "Apple M2 Pro": 6.8e12,
+    "Apple M2 Max": 13.6e12,
+    "Apple M2 Ultra": 27.2e12,
+    "NVIDIA GeForce RTX 3070 Ti Laptop GPU": 16.6e12,
+    "NVIDIA GeForce RTX 3090": 35.58e12,
+    "Jetson Orin Nano Super 8G": 2.089e12,
+    "Raspberry Pi 5": 0.1536e12
+  }
+}

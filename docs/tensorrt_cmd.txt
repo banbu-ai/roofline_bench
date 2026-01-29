@@ -1,0 +1,8 @@
+pip install "optimum-onnx[onnxruntime]"
+
+# convert to onnx
+optimum-cli export onnx \
+  /Users/saber/Code/llm_inference_roofline_detect/models/onnx/Qwen2.5-1.5B-Instruct_onnx/ \
+  --model /Users/saber/Code/llm_inference_roofline_detect/models/Qwen2.5-1.5B-Instruct \
+  --task text-generation-with-past
+

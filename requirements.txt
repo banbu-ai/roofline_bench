@@ -1,0 +1,11 @@
+# jupyter
+matplotlib
+pandas
+psutil
+nvidia-ml-py
+py-cpuinfo
+# mlx~=0.28.0
+torch>=2.5.1
+numpy~=2.2.6
+transformers
+accelerate

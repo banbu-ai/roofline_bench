@@ -1,0 +1,25 @@
+# prepare dataset
+cd ~/Code/TensorRT-LLM/benchmarks/cpp/
+python prepare_dataset.py --stdout --tokenizer ~/models/Qwen2.5-1.5B-Instruct token-norm-dist --input-mean 128 --output-mean 128 --input-stdev 0 --output-stdev 0 --num-requests 1 > ~/datasets/synthetic_qwen2.5_128_128_1.json
+python prepare_dataset.py --stdout --tokenizer ~/models/Qwen2.5-1.5B-Instruct token-norm-dist --input-mean 128 --output-mean 4096 --input-stdev 0 --output-stdev 0 --num-requests 1 > ~/datasets/synthetic_qwen2.5_128_4096_1.json
+python prepare_dataset.py --stdout --tokenizer ~/models/Qwen2.5-1.5B-Instruct token-norm-dist --input-mean 4096 --output-mean 128 --input-stdev 0 --output-stdev 0 --num-requests 1 > ~/datasets/synthetic_qwen2.5_4096_128_1.json
+python prepare_dataset.py --stdout --tokenizer ~/models/Qwen2.5-1.5B-Instruct token-norm-dist --input-mean 4096 --output-mean 4096 --input-stdev 0 --output-stdev 0 --num-requests 1 > ~/datasets/synthetic_qwen2.5_4096_4096_1.json
+
+# build engine
+cd ~/Code/TensorRT-LLM/examples/models/core/qwen/
+python convert_checkpoint.py --model_dir ~/models/Qwen2.5-1.5B-Instruct --output_dir ~/models/Qwen2.5-1.5B-Instruct_trtllm_fp16 --dtype float16
+trtllm-build --checkpoint_dir ~/models/Qwen2.5-1.5B-Instruct_trtllm_fp16 --output_dir ~/engines/Qwen2.5-1.5B-Instruct_trtllm_fp16 --gemm_plugin float16
+python convert_checkpoint.py --model_dir ~/models/Qwen2.5-1.5B-Instruct --output_dir ~/models/Qwen2.5-1.5B-Instruct_trtllm_fp16_int8kv --dtype float16 --int8_kv_cache
+trtllm-build --checkpoint_dir ~/models/Qwen2.5-1.5B-Instruct_trtllm_fp16_int8kv --output_dir ~/engines/Qwen2.5-1.5B-Instruct_trtllm_fp16_int8kv --gemm_plugin float16
+
+python convert_checkpoint.py --model_dir ~/models/Qwen2.5-0.5B-Instruct --output_dir ~/models/Qwen2.5-1.5B-Instruct_trtllm_fp16 --dtype float16
+trtllm-build --checkpoint_dir ~/models/Qwen2.5-0.5B-Instruct_trtllm_fp16 --output_dir ~/engines/Qwen2.5-1.5B-Instruct_trtllm_fp16 --gemm_plugin float16
+python convert_checkpoint.py --model_dir ~/models/Qwen2.5-0.5B-Instruct --output_dir ~/models/Qwen2.5-1.5B-Instruct_trtllm_fp16_int8kv --dtype float16 --int8_kv_cache
+trtllm-build --checkpoint_dir ~/models/Qwen2.5-0.5B-Instruct_trtllm_fp16_int8kv --output_dir ~/engines/Qwen2.5-1.5B-Instruct_trtllm_fp16_int8kv --gemm_plugin float16
+
+# trtllm-bench
+trtllm-bench --model Qwen/Qwen2.5-1.5B-Instruct --model_path ~/models/Qwen2.5-1.5B-Instruct/ throughput --dataset ~/datasets/synthetic_qwen2.5_128_128_1.json --engine_dir ~/models/Qwen2.5-1.5B-Instruct_trtllm_fp16
+
+# quantization
+cd ~/Code/TensorRT-LLM/
+python tensorrt_llm/quantization/quantize.py --model_dir ~/models/Qwen2.5-1.5B-Instruct --dtype float16 --qformat fp8 --kv_cache_dtype fp8 --output_dir ~/models/Qwen2.5-1.5B-Instruct_trtllm_fp8 --calib_size 512

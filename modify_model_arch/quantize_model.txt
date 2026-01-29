@@ -1,0 +1,17 @@
+# macOS
+llama-quantize /Users/saber/Code/llm_inference_roofline_detect/models/Qwen2.5-1.5B-Instruct-f16.gguf /Users/saber/Code/llm_inference_roofline_detect/models/Qwen2.5-1.5B-Instruct-q4_k_m.gguf q4_k_m
+
+# Windows
+llama-quantize E:\Code\llm_inference_roofline_detect\models\PLM-1.8B-Instruct-f16.gguf E:\Code\llm_inference_roofline_detect\models\PLM-1.8B-Instruct-q4_k_m.gguf q4_k_m
+llama-quantize E:\Code\llm_inference_roofline_detect\models\Fox-1-1.6B-f16.gguf E:\Code\llm_inference_roofline_detect\models\Fox-1-1.6B-q4_k_m.gguf q4_k_m
+llama-quantize E:\Code\llm_inference_roofline_detect\models\SmolLM2-1.7B-Instruct-f16.gguf E:\Code\llm_inference_roofline_detect\models\SmolLM2-1.7B-Instruct-q4_k-m.gguf q4_k_m
+
+# Raspberry Pi
+llama-quantize /Users/saber/Code/llm_inference_roofline_detect/models/SmolLM2-135M-Instruct-f16.gguf /Users/saber/Code/llm_inference_roofline_detect/models/SmolLM2-135M-Instruct-q4_k_m.gguf q4_k_m
+llama-quantize /Users/saber/Code/llm_inference_roofline_detect/models/SmolLM2-360M-Instruct-f16.gguf /Users/saber/Code/llm_inference_roofline_detect/models/SmolLM2-360M-Instruct-q4_k_m.gguf q4_k_m
+llama-quantize /Users/saber/Code/llm_inference_roofline_detect/models/pythia-160m-f16.gguf /Users/saber/Code/llm_inference_roofline_detect/models/pythia-160m-q4_k_m.gguf q4_k_m
+llama-quantize /Users/saber/Code/llm_inference_roofline_detect/models/pythia-410m-f16.gguf /Users/saber/Code/llm_inference_roofline_detect/models/pythia-410m-q4_k_m.gguf q4_k_m
+llama-quantize /Users/saber/Code/llm_inference_roofline_detect/models/Qwen2.5-0.5B-Instruct-f16.gguf /Users/saber/Code/llm_inference_roofline_detect/models/Qwen2.5-0.5B-Instruct-q4_k_m.gguf q4_k_m
+llama-quantize /Users/saber/Code/llm_inference_roofline_detect/models/Qwen3-0.6B-f16.gguf /Users/saber/Code/llm_inference_roofline_detect/models/Qwen3-0.6B-q4_k_m.gguf q4_k_m
+llama-quantize /Users/saber/Code/llm_inference_roofline_detect/models/Qwen3-1.7B-f16.gguf /Users/saber/Code/llm_inference_roofline_detect/models/Qwen3-1.7B-q4_k_m.gguf q4_k_m
+llama-quantize /Users/saber/Code/llm_inference_roofline_detect/models/SmallThinker-4BA0.6B-Instruct-f16.gguf /Users/saber/Code/llm_inference_roofline_detect/models/SmallThinker-4BA0.6B-Instruct-q4_k_m.gguf q4_k_m

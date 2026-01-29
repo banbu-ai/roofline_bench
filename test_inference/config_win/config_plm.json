@@ -1,0 +1,19 @@
+{
+  "log_dir": "E:/Code/llm_inference_roofline_detect/log",
+  "analysis_dir": "E:/Code/llm_inference_roofline_detect/analysis",
+  "threads": 1,
+  "model_name": "PLM-1.8B-Instruct",
+  "model_type": "plm F16",
+  "model_path": "E:/Code/llm_inference_roofline_detect/models/PLM-1.8B-Instruct-f16.gguf",
+  "model_info":
+  {
+    "attention_type": "MLA",
+    "hidden_size": 2048,
+    "num_attention_heads": 16,
+    "num_key_value_heads": 16,
+    "num_hidden_layers": 32,
+    "qk_nope_head_dim": 128,
+    "qk_rope_head_dim": 64,
+    "is_modified_arch": false
+  }
+}
