@@ -2,6 +2,8 @@
 
 This project is mainly used to test the upper limit of LLM's inference performance on the device
 
+> A new version of this project, updated alongside the paper, is available at [RooflineDiag](https://github.com/HuzhouNLP/RooflineDiag).
+
 <br>
 
 # Test Device Memory Access Bound & Computation Bound
@@ -209,6 +211,5 @@ config = ConfigUtils.load_config(config_path)
 
 batch_analysis_json = batch_inference_analysis(config=config, p_tokens_list=p_tokens_list, n_tokens_list=n_tokens_list)
 ```
-
 
 
