@@ -212,4 +212,18 @@ config = ConfigUtils.load_config(config_path)
 batch_analysis_json = batch_inference_analysis(config=config, p_tokens_list=p_tokens_list, n_tokens_list=n_tokens_list)
 ```
 
+# Citation
 
+If you find this work useful in your research, please cite our paper:
+
+```bibtex
+@misc{bi2026rooflinebenchbenchmarkingframeworkondevice,
+      title={RooflineBench: A Benchmarking Framework for On-Device LLMs via Roofline Analysis}, 
+      author={Zhen Bi and Xueshu Chen and Luoyang Sun and Yuhang Yao and Qing Shen and Jungang Lou and Cheng Deng},
+      year={2026},
+      eprint={2602.11506},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG},
+      url={https://arxiv.org/abs/2602.11506}, 
+}
+```
